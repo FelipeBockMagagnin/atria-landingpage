@@ -1,23 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 html, body, .app {
   background-color: #fbfbfd;
   width: 100vw;
-  font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
   font-weight: 500;
+  line-height: 1.1  
 }
 
 .title{
-  font-size: 1.5rem;
+  font-size: 18pt;
   font-weight: 600;
 }
 
+.left {
+  text-align: left !important;
+}
+
 .title-color {
-  background-color: rgb(182, 183, 195);
-    color: rgb(72, 76, 122);
+  /*background-color: rgb(182, 183, 195);
+    color: rgb(72, 76, 122);*/
   border-radius: 10px;
-  padding: 10px;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -27,19 +30,16 @@ html, body, .app {
 
 
 .bold {
-    color: rgb(72, 76, 122);
+    /*color: rgb(72, 76, 122);*/
     font-weight: bold;
 }
 
 .text{
-  font-size: 1rem;
 }
 
 .image {
-  width: 40vw;
-  border-radius: 20px;
-  box-shadow: 0 15px 20px #05050525;
-  border: 1px solid #efefef;
+  width: 30vw;
+  border-radius: 10px;
 }
 
 .shadow {
@@ -59,8 +59,8 @@ html, body, .app {
 }
 
 .flex-item {
-  width: 50%;
-  padding: 2%;
+  padding: 0px 10%;
+  margin-top: 10px;
 }
 
 .h-500 {
@@ -81,11 +81,11 @@ html, body, .app {
 }
 
 .container-content {
-  box-shadow: 0 15px 20px #0505050d;
-  border: 1px solid #efefef;
+  /*box-shadow: 0 15px 20px #0505050d;
+  border: 1px solid #efefef; */
   margin-left: auto;
-  padding: 50px;
   border-radius: 20px;
+  margin-top: 10px;
 }
 
 .justify {
@@ -118,8 +118,6 @@ html, body, .app {
   }
 
   .title-color {
-    background-color: rgb(182, 183, 195);
-      color: rgb(72, 76, 122);
     border-radius: 10px;
     padding: 10px;
     width: fit-content;
