@@ -3,9 +3,10 @@ html, body, .app {
   background-color: #fbfbfd;
   width: 100vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12pt;
+  font-size: 16pt;
   font-weight: 500;
-  line-height: 1.1  
+  line-height: 1.1;
+  overflow-x: hidden !important;
 }
 
 hr {
@@ -13,8 +14,8 @@ hr {
 }
 
 .title{
-  font-size: 28pt;
-  font-weight: 600;
+  font-size: 32pt;
+  font-weight: 700;
 }
 
 .left {
@@ -45,10 +46,12 @@ hr {
   width: 30vw;
   border-radius: 10px;
 }
+img {
+  box-shadow: 0px 0px 20px 8px #050505a3;  
+}
 
 .shadow {
-  box-shadow: 0 15px 20px #05050525;
-  border: 1px solid #efefef;
+  box-shadow: 0px 0px 20px 8px #050505a3;  
 }
 
 .center {
@@ -80,21 +83,51 @@ hr {
   border-radius: 20px;
 }
 
+.w-40 {
+  width: 40%!important;
+}
+
 .container {
   
 }
 
+iframe[seamless] {
+  display: block;
+}
+
+.white {
+  color: white;
+}
 .container-content {
   /*box-shadow: 0 15px 20px #0505050d;
   border: 1px solid #efefef; */
   margin-left: auto;
   border-radius: 20px;
   margin-top: 10px;
+  z-index: 10;
+  position: relative;
 }
 
 .justify {
   text-align: justify;
 }
+
+
+
+.background-image {
+  background-image: url("./images/2049.jpg");
+  background-size: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+
+
 
 
 @media (max-width: 800px) {
@@ -105,6 +138,9 @@ hr {
   .flex-item {
     width: 100%;
     text-align: center;
+  }
+  .title {
+    font-size: 22pt;
   }
 
   .h-600, .h-700, .h-500 {
